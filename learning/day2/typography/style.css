@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Petemoss&display=swap');
+/* Typogrphy is how text is prsented and arraned on a page */
+body{
+    padding: 10%;
+    font-size:2em;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+p{
+    text-decoration:underline;
+    text-decoration:overline;
+    text-decoration:line-through;
+    text-decoration:none;
+    text-transform:uppercase;
+    text-transform:lowercase;
+    text-transform:capitalize;
+    text-transform:none;
+    text-align:center;
+    text-align:right;
+    text-align:left;
+    text-align:justify;
+    text-indent:5em;
+    line-height:1.5;
+    letter-spacing:0.10em;
+    font-family:'Courier New', Courier, monospace;
+    word-spacing:0.1em;
+    font-weight:1000;
+    font-style:italic;
+    font-style:oblique;
+    font-family:'Petemoss', cursive;
+    font-size:2em;
+
+}
+
+.petemoss-regular {
+  font-family: "Petemoss", cursive;
+  font-weight:bolder;
+  font-style: normal;
+
+}
+input,button{
+    font-size:inherit;
+    border:3px solid black
+
+}

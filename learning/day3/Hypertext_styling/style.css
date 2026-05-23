@@ -1,0 +1,22 @@
+body{
+    padding:10%;
+    font-size:2em;
+    text-align:justify;
+
+}
+a:hover{
+    color:red;
+}
+
+a:visited{
+    color:green;
+}
+a:focus {
+    outline: 3px solid red;
+    background-color: lightyellow;
+}
+a:active{
+    color:#d2691e
+}
+
+

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 50%;
+     border: 1px solid red;
+}
+body{
+    min-width: 50vw
+}
+h1{
+    font-size:2em;
+    border: 1px solid blue;
+    width: 50%;
+}
+main{
+    font-size: 2rem;
+}
+p{
+    font-size: 2em;
+}
+.p1{
+    font-size: 2rem;
+    width: 40ch;
+}

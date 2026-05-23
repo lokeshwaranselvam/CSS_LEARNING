@@ -1,0 +1,23 @@
+*{
+    font-size: 50px;
+}/* Universal selector */
+body{
+    font-family:monospace;
+}
+p{
+    color:red!important/* flag */;
+}/* Element selector */
+p{
+    color:yellow;
+}
+h1, h2{
+    background: aliceblue
+}/* Group selector */
+.ar2{
+    color: blue;
+}
+/* Class selector */
+#ar3{
+    color:green;
+}
+

@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+h1, .p1 {
+    font-size: 3rem;
+    border: 3px solid red;
+    margin:1.5em;
+    padding: 0.5em;
+    width: 50%;
+}
