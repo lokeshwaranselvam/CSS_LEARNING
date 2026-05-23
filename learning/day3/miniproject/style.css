@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 10px;
+    text-align: center;
+    
+}
+nav{
+    border: 2px solid gray;
+    margin:0 auto 1.5em;
+    border-radius: 25px;
+    line-height: 3em;
+    font-size: 3em;
+    max-width: 600px;
+}
+h2{
+    background-color: gold;
+    border-radius: 25px 25px 0px 0px;
+}
+ul{
+    list-style: none;
+}
+li .inbox{
+    display: block;
+}
+.inbox{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    border-top: 2px gray solid;
+}
+.inbox:hover{
+    color: white;
+    background-color: gray;
+
+}
+.outbox{
+    text-decoration: none;
+    color: red;
+    margin-bottom: 1.5em;
+    font-size: 1.3em;
+}
+
+
+
