@@ -1,0 +1,45 @@
+body{
+    font-size: 2rem;
+    font-family: monospace;
+}
+/*p{
+    background-color: lightgray; } /* block level element */
+
+
+/* .opposite{
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    padding: 10%;
+    margin-top:100px;
+    height: 200px;
+}
+.three{
+    background-color: black;
+    color: aliceblue;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type:none;
+    text-align: right;
+    background-color: antiquewhite;
+    padding: 0.5em;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+    color: brown;
+}
+li a:hover,
+li a:focus{
+    text-decoration: underline;
+}
