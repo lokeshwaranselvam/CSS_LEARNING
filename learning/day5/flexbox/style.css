@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 40px auto;
+    min-height: 100vh;
+    padding: 40px;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.outerbox{
+    border: black solid 2px;
+    margin-inline: auto;
+    min-width: 300px;
+    min-height: 500px;
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+
+}
+.box{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:nth-child(2){
+    flex:2 2 200px;
+}
