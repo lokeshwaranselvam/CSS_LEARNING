@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+Ops+One&family=Chelsea+Market&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 900;
+    color: aliceblue;
+    text-shadow: 3px 3px 3px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    scroll-behavior: smooth;
+    
+    
+}
+
+header,footer{
+    background-image: linear-gradient(gray,white);
+    border: 2px solid gray;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    
+}
+a:hover{
+    border-bottom:3px gray solid ;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    padding: 20px;
+    flex-basis: 100vh;
+    flex-wrap: wrap;
+    background-image:radial-gradient(white,black) ;
+    box-shadow: 5px 5px 4px gray;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(black,white);
+    padding:2%;
+    line-height: 2em;
+    border-radius:20px ;
+    border: 3px gray solid;
+    
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:4px rgb(255, 255, 255) double;
+
+}
+
+@media screen and (min-width:860px){
+    nav{
+        display: none;
+    }
+    
+}
+
+

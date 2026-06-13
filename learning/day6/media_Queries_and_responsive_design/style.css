@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Black+Ops+One&display=swap');
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+   
+
+    background-color: gray;
+    background-image: radial-gradient(white, gray);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+header, nav, footer{
+    
+    
+    background-color: rgb(48, 47, 47);
+    color: aliceblue;
+}
+
+main{
+    flex-grow: 1;
+    
+    display: grid;
+    place-items: center;
+    color: rgb(16, 17, 18);
+    font-size: 300%;
+}
+header nav{
+    background-color: aliceblue;
+    color: black;
+    border: black solid 3px;
+}
+
+@media screen and (max-width:481px){
+    body{
+        background-color: white;
+        background-image: radial-gradient(gray, white);
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        
+        height: 100vh;
+        width: max-content;
+        z-index: 1;
+    }
+    footer{
+        z-index: 2;
+    }
+    
+}
+@media screen and (max-width:364px){
+    main{
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        font-size: 200%;
+    }
+    
+}
