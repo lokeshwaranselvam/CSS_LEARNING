@@ -38,7 +38,7 @@ a{
     color: inherit;
     padding: 5px;
     color: aliceblue;
-    text-shadow: none;
+    
     
 }
 nav ul li a:is(:hover,  :focus){
@@ -49,11 +49,7 @@ nav ul li a:is(:hover,  :focus){
 nav a:link{
     color: aliceblue;
 }
-nav a:visited{
-    color: black;
-    text-shadow: none;
-    
-}
+
 
 .cards{
     display: flex;
@@ -69,14 +65,33 @@ nav a:visited{
 
 .card{
     width: 400px;
-    height: 400px;
+    height: 420px;
     background-image: radial-gradient(black,white);
     padding:2%;
     line-height: 2em;
     border-radius:20px ;
     border: 3px gray solid;
     
+    
 }
+.card img[alt]{
+    border: black 10px  double;
+}
+.card img:not[alt]{
+    border: rgb(93, 92, 92) 10px  double;
+}
+.card .p1::before{
+    content: 'Bounty 1B';
+    display: block;
+}
+.card .p2::after{
+    content: 'Dead or Alive';
+    display: block;
+}
+.card:nth-child(2){
+    border: 10px black solid;
+}
+
 img{
     width: 250px;
     height: 250px;
@@ -91,5 +106,7 @@ img{
     }
     
 }
+
+
 
 
