@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --COLOR-IN:black;
+    --COLOR-OUT:green;
+    --TEXT-COLOR:aliceblue;
+
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --COLOR-IN:black;
+        --COLOR-OUT:red;
+        --TEXT-COLOR:aliceblue;
+    }
+}
+
+
+body{
+    font-family: monospace;
+    font-size: clamp(2rem, 3vh, 7rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: hsla(0, 0%, 0%, 0.188);
+    min-height: 100vh;
+}
+
+:is(header,footer){
+    background-image:linear-gradient(var(--COLOR-IN), var(--COLOR-OUT));
+    min-width: 422px;
+    border: var(--COLOR-IN) 2px solid;
+    
+}
+:is(h1,h2){
+    -webkit-background-clip: text;
+    background-image: radial-gradient(var(--COLOR-OUT), var(--COLOR-IN));
+    -webkit-text-fill-color: transparent;
+}
+header nav{
+    background-image: linear-gradient(var(--COLOR-IN),var(--COLOR-OUT));
+    border: var(--COLOR-IN) 2px solid;
+}
+body main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    border: 3px solid yellow;
+    
+}
+body main p{
+    font-size: clamp(3rem,3.5vw,4rem);
+    color:var(--TEXT-COLOR);
+    width:min(400px,90vw);
+    height:min(400px,60vw);
+    background-image: radial-gradient(var(--COLOR-IN),var(--COLOR-OUT) );
+    
+    border-radius: 50%;
+    border: 10px black solid;
+    text-shadow: 6px 6px 8px black;
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid blue;
+
+    
+}
+aside{
+    position: relative;
+    flex: 1;
+    background-image:radial-gradient(var(--COLOR-IN),var(--COLOR-OUT));
+    
+    color: white;
+    border: black 3px solid;
+    border-top: none;
+    border-bottom: none;
+    
+    height: 100vh;
+
+    padding: 20px;
+    border: 3px solid lime;
+    
+
+}
+span:hover::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -40px;
+    left: 0;
+
+    background: black;
+    color: white;
+
+    padding: 5px;
+    border-radius: 5px;
+
+    white-space: nowrap;
+    
+    
+}
+span:hover{
+    border-bottom: white dashed 2px;
+    
+}
+
+@media screen and (max-width:432px){
+    span:hover::before{
+        display: none;
+    }
+    
+}
+
