@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font:  1.5em   monospace ;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url('https://res.cloudinary.com/dxtbauovs/image/upload/v1781972794/hbg2-removebg-preview_xooa8n.png'),linear-gradient(to right, #DF1F2D, #B11313, #2B3784, #447BBE);
+    background-size: cover;
+    background-position: center;
+    border: #fac7c7 1px solid;
+    align-items: center;
+    flex-wrap: wrap;
+    height: max-content;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 10px black ;
+}
+
+ul li {
+    list-style: none;
+    font-weight: 900;
+    padding: 10px;
+
+}
+
+ul {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+ul li:hover {
+    border: #f8f8f8 2px solid;
+}
+ul li a{
+    color:#f8f8f8;
+    text-decoration: none;
+}
+
+main{
+    flex-grow: 1;
+    
+    
+}
+main .details{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    padding: 40px;
+    background-image:linear-gradient(hsla(0, 0%, 0%, 0.666),hsla(0, 0%, 0%, 0.666)), url('bg.jpg') ;
+    background-size: cover;
+    background-position: center;
+    border: 1px black solid;
+    
+}
+img{
+    height: 300px;
+    width: 250px;
+    border: #f8f8f8 4px double;
+    transition: all 0.5s 0.1s;
+}
+img:hover{
+    transform: translateY(-30px);
+}
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+div p{
+    color: #f8f8f8;
+    text-shadow: 2px 2px 10px black ;
+
+}
+div h2 a{
+    color: #f8f8f8;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    text-shadow: 2px 2px 10px black ;
+
+}
+div h2 a:hover{
+    border-bottom: #f8f8f8 2px solid;
+}
+footer{
+    padding: 20px;
+    background-image: url('https://res.cloudinary.com/dxtbauovs/image/upload/v1781972794/hbg2-removebg-preview_xooa8n.png'),linear-gradient(to right, #DF1F2D, #B11313, #2B3784, #447BBE);
+    background-size: cover;
+    background-position: center;
+    border: #fac7c7 1px solid;
+    color: #f8f8f8;
+    text-align: center;
+    text-shadow: 2px 2px 10px black ;
+}
+
+@media screen and (max-width:432px) {
+    ul {
+        display: grid;
+        gap: 0;
+    }
+    li{
+        border-top: #f8f8f8 1px solid;
+        display: block;
+        width: 100vw;
+        text-align: center;
+        
+    }
+
+    header {
+        display: grid;
+        place-content:center ;
+        gap: 2em;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width:532px) {
+    main .details{
+        flex-wrap: wrap;
+    }
+    
+}
